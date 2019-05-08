@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "vestorly_auth": {
+            "required": true,
+            "type": "string",
+            "format": "string"
+        },
+        "access_token": {
+            "required": false,
+            "type": "string"
+        },
+        "start": {
+            "required": false,
+            "type": "integer"
+        },
+        "limit": {
+            "required": false,
+            "type": "integer"
+        }
+    }
+}

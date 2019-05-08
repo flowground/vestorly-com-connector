@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+        "vestorly_auth": {
+            "required": true,
+            "type": "string"
+        },
+        "access_token": {
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "click_count": {
+                    "format": "int64",
+                    "type": "integer"
+                },
+                "is_default": {
+                    "type": "boolean"
+                },
+                "is_sent": {
+                    "type": "boolean"
+                },
+                "total_click_count": {
+                    "format": "int64",
+                    "type": "integer"
+                },
+                "unique_click_count": {
+                    "format": "int64",
+                    "type": "integer"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

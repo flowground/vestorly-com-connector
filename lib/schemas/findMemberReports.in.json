@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "vestorly_auth": {
+            "required": true,
+            "type": "string"
+        },
+        "access_token": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

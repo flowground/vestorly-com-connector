@@ -1,0 +1,160 @@
+{
+    "type": "object",
+    "properties": {
+        "vestorly_auth": {
+            "required": true,
+            "type": "string"
+        },
+        "access_token": {
+            "required": false,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "string"
+                },
+                "age": {
+                    "type": "string"
+                },
+                "assets": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "data_estimated": {
+                    "type": "boolean"
+                },
+                "education": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "estimated_location": {
+                    "type": "string"
+                },
+                "estimated_zip": {
+                    "type": "string"
+                },
+                "family": {
+                    "type": "string"
+                },
+                "first_name": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "genuine_email": {
+                    "type": "boolean"
+                },
+                "high_net_worth": {
+                    "type": "boolean"
+                },
+                "home_market_value": {
+                    "type": "string"
+                },
+                "home_owner_status": {
+                    "type": "string"
+                },
+                "hometown": {
+                    "type": "string"
+                },
+                "household_income": {
+                    "type": "string"
+                },
+                "interest_consultation": {
+                    "type": "string"
+                },
+                "interest_in_new_advisor": {
+                    "type": "string"
+                },
+                "invited_by": {
+                    "type": "string"
+                },
+                "invited_on": {
+                    "type": "string"
+                },
+                "is_client": {
+                    "type": "boolean"
+                },
+                "is_hidden": {
+                    "type": "boolean"
+                },
+                "last_active_date": {
+                    "type": "string"
+                },
+                "last_name": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                },
+                "marital_status": {
+                    "type": "string"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "occupation": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "picture_url": {
+                    "type": "string"
+                },
+                "portfolio_size": {
+                    "type": "string"
+                },
+                "profile_url": {
+                    "type": "string"
+                },
+                "register_ip_addr": {
+                    "type": "string"
+                },
+                "signed_up_with": {
+                    "type": "string"
+                },
+                "state": {
+                    "type": "string"
+                },
+                "subscribed_group_ids": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "tags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "unsubscribed": {
+                    "type": "boolean"
+                },
+                "unsubscribed_date": {
+                    "type": "boolean"
+                },
+                "user_type": {
+                    "type": "string"
+                },
+                "zip": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "_id",
+                "email"
+            ],
+            "type": "object"
+        }
+    }
+}

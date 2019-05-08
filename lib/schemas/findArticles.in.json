@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "properties": {
+        "vestorly_auth": {
+            "required": true,
+            "type": "string"
+        },
+        "access_token": {
+            "required": false,
+            "type": "string"
+        },
+        "limit": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "text_query": {
+            "required": false,
+            "type": "string"
+        },
+        "sort_direction": {
+            "required": false,
+            "type": "string"
+        },
+        "sort_by": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

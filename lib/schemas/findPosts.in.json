@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "vestorly_auth": {
+            "required": true,
+            "type": "string"
+        },
+        "access_token": {
+            "required": false,
+            "type": "string"
+        },
+        "text_query": {
+            "required": false,
+            "type": "string"
+        },
+        "external_url": {
+            "required": false,
+            "type": "string"
+        },
+        "is_published": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

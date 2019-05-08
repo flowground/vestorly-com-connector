@@ -1,0 +1,45 @@
+{
+    "type": "object",
+    "properties": {
+        "vestorly_auth": {
+            "required": true,
+            "type": "string"
+        },
+        "access_token": {
+            "required": false,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "article_id": {
+                    "type": "string"
+                },
+                "custom_feed_id": {
+                    "type": "string"
+                },
+                "not_article_id": {
+                    "type": "string"
+                },
+                "not_seeds": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "seeds": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "sort_by": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "custom_feed_id"
+            ],
+            "type": "object"
+        }
+    }
+}

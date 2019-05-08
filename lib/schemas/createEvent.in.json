@@ -1,0 +1,99 @@
+{
+    "type": "object",
+    "properties": {
+        "vestorly_auth": {
+            "required": true,
+            "type": "string"
+        },
+        "access_token": {
+            "required": false,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "advisor_id": {
+                    "type": "string"
+                },
+                "created_at": {
+                    "type": "string"
+                },
+                "event_content": {
+                    "properties": {
+                        "_id": {
+                            "description": "Mongo id of event",
+                            "type": "string"
+                        },
+                        "content_field": {
+                            "type": "string"
+                        },
+                        "content_id": {
+                            "type": "string"
+                        },
+                        "content_type": {
+                            "type": "string"
+                        },
+                        "created_at": {
+                            "type": "string"
+                        },
+                        "slug": {
+                            "type": "string"
+                        },
+                        "updated_at": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "original_url": {
+                    "type": "string"
+                },
+                "originator_email": {
+                    "type": "string"
+                },
+                "originator_id": {
+                    "type": "string"
+                },
+                "parent_event_id": {
+                    "type": "string"
+                },
+                "referer": {
+                    "type": "string"
+                },
+                "subject_email": {
+                    "type": "string"
+                },
+                "subject_id": {
+                    "type": "string"
+                },
+                "type": {
+                    "enum": [
+                        "page_view",
+                        "sign_up",
+                        "sign_in",
+                        "content_posted",
+                        "create_post",
+                        "publish_post",
+                        "update_post",
+                        "delete_post",
+                        "unpublish_post",
+                        "invite",
+                        "publish_newsletter",
+                        "publish_social",
+                        "click",
+                        "delivered",
+                        "open",
+                        "dropped",
+                        "bounce"
+                    ],
+                    "type": "string"
+                }
+            },
+            "required": [
+                "type",
+                "original_url",
+                "subject_email"
+            ],
+            "type": "object"
+        }
+    }
+}

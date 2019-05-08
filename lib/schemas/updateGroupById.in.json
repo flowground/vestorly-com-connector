@@ -1,0 +1,54 @@
+{
+    "type": "object",
+    "properties": {
+        "vestorly_auth": {
+            "required": true,
+            "type": "string"
+        },
+        "access_token": {
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "autopublish": {
+                    "type": "boolean"
+                },
+                "is_default": {
+                    "type": "boolean"
+                },
+                "is_hidden": {
+                    "type": "boolean"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "new_weekly_mailer_content": {
+                    "type": "string"
+                },
+                "newsletter_subject": {
+                    "type": "string"
+                },
+                "number_articles_per_group": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "number_articles_per_newsletter": {
+                    "format": "int32",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "_id"
+            ],
+            "type": "object"
+        }
+    }
+}

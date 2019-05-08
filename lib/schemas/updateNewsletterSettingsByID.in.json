@@ -1,0 +1,126 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "vestorly_auth": {
+            "required": true,
+            "type": "string"
+        },
+        "access_token": {
+            "required": false,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "newsletter_setting": {
+                    "properties": {
+                        "_id": {
+                            "type": "string"
+                        },
+                        "banner_color": {
+                            "type": "string"
+                        },
+                        "body_html": {
+                            "type": "string"
+                        },
+                        "email_accent_color": {
+                            "type": "string"
+                        },
+                        "email_day_of_week": {
+                            "type": "integer"
+                        },
+                        "email_hour": {
+                            "type": "integer"
+                        },
+                        "email_status": {
+                            "type": "string"
+                        },
+                        "facebook_active_wall": {
+                            "type": "string"
+                        },
+                        "footer_email_font": {
+                            "type": "string"
+                        },
+                        "footer_html": {
+                            "type": "string"
+                        },
+                        "footer_image_url": {
+                            "type": "string"
+                        },
+                        "group_id": {
+                            "type": "string"
+                        },
+                        "header_background_color": {
+                            "type": "string"
+                        },
+                        "header_image_url": {
+                            "type": "string"
+                        },
+                        "intro_text": {
+                            "type": "string"
+                        },
+                        "linkedin_active_wall": {
+                            "type": "string"
+                        },
+                        "montage_enabled": {
+                            "type": "boolean"
+                        },
+                        "montage_facebook_image_url": {
+                            "type": "string"
+                        },
+                        "montage_linkedin_image_url": {
+                            "type": "string"
+                        },
+                        "montage_title": {
+                            "type": "string"
+                        },
+                        "montage_twitter_image_url": {
+                            "type": "string"
+                        },
+                        "newsletter_ids": {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        "newsletter_type": {
+                            "type": "string"
+                        },
+                        "primary_email_font": {
+                            "type": "string"
+                        },
+                        "salutation_text": {
+                            "type": "string"
+                        },
+                        "social_day_of_week": {
+                            "type": "integer"
+                        },
+                        "social_description": {
+                            "type": "string"
+                        },
+                        "social_posting_text": {
+                            "type": "string"
+                        },
+                        "social_title": {
+                            "type": "string"
+                        },
+                        "subject": {
+                            "type": "string"
+                        },
+                        "title_color": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "_id"
+                    ],
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "type": "object",
+    "properties": {
+        "vestorly_auth": {
+            "required": true,
+            "type": "string"
+        },
+        "access_token": {
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string",
+            "format": "string"
+        },
+        "limit": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "sort_by": {
+            "required": false,
+            "type": "string"
+        },
+        "start": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "created_at_gte_days_ago": {
+            "type": "string"
+        },
+        "text_query": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "type": "object",
+    "properties": {
+        "vestorly_auth": {
+            "required": true,
+            "type": "string"
+        },
+        "access_token": {
+            "required": false,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "custom_feed_filter_id": {
+                    "type": "string"
+                },
+                "custom_feed_permission_id": {
+                    "type": "string"
+                },
+                "custom_feed_visibility": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "default": {
+                    "type": "boolean"
+                },
+                "is_auto_curated_newsletter_custom_feed": {
+                    "type": "boolean"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "popularity": {
+                    "format": "float",
+                    "type": "number"
+                },
+                "premium_content": {
+                    "type": "boolean"
+                },
+                "seed_custom_feed_id": {
+                    "type": "string"
+                },
+                "social_posting_id": {
+                    "type": "string"
+                },
+                "third_party_articles_custom_feed_id": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "label"
+            ],
+            "type": "object"
+        }
+    }
+}
